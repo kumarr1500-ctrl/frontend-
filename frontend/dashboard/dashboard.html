@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="user-info">
+        <div class="avatar">DU</div>
+        <p class="name">Demo User</p>
+        <small>demo@webtech.practice</small>
+      </div>
+      <nav>
+        <ul>
+          <li class="active" data-section="overview">📊 Overview</li>
+          <li data-section="profile">👤 Profile Settings</li>
+          <li data-section="security">🔒 Security</li>
+          <li data-section="notifications">🔔 Notifications</li>
+          <li data-section="help">❓ Help & Support</li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <button id="signOut">🚪 Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header>
+        <h2>WebTech Practice • Dashboard</h2>
+        <button class="theme-toggle">🌗 Theme</button>
+      </header>
+
+      <!-- Sections -->
+      <section id="overview" class="section active">
+        <h3>Welcome back, Demo User 👋</h3>
+        <p>Manage your profile and account preferences.</p>
+        <div class="cards">
+          <div class="card">🎨 Theme <br><small>Dark/Light mode</small></div>
+          <div class="card">🔐 Authentication <br><small>Secure session</small></div>
+          <div class="card">📑 Profile <br><small>20% completed</small></div>
+          <div class="card">🛡 Security <br><small>Password protected</small></div>
+        </div>
+      </section>
+
+      <section id="profile" class="section">
+        <h3>Profile Settings</h3>
+        <form>
+          <label>Full Name</label>
+          <input type="text" value="Demo User">
+
+          <label>Email Address</label>
+          <input type="email" value="demo@webtech.practice">
+
+          <label>Date of Birth</label>
+          <input type="date">
+
+          <label>Phone Number</label>
+          <input type="text" value="+91 98765 43210">
+
+          <button type="submit" class="btn">Save Changes</button>
+        </form>
+      </section>
+
+      <section id="security" class="section">
+        <h3>Security Settings</h3>
+        <form>
+          <label>Current Password</label>
+          <input type="password">
+
+          <label>New Password</label>
+          <input type="password">
+
+          <label>Confirm Password</label>
+          <input type="password">
+
+          <button type="submit" class="btn">Update Password</button>
+        </form>
+      </section>
+
+      <section id="notifications" class="section">
+        <h3>Notifications</h3>
+        <div class="card">📧 Email Alerts <br><small>Enable email updates</small></div>
+        <div class="card">🔔 Security Alerts <br><small>Enable security notifications</small></div>
+      </section>
+
+      <section id="help" class="section">
+        <h3>Help & Support</h3>
+        <p>❓ How do I update my profile?<br> → Go to Profile Settings.</p>
+        <p>🔐 Is my data secure?<br> → Yes, stored locally in your browser.</p>
+        <p>☎ Contact Support: support@webtech.practice</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
